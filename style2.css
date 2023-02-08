@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#banner{
+    background: linear-gradient((#111142))url(images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;   
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.banner-text{
+    text-align: center;
+    color: #111142;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+}
+.banner-text p{
+    font-size: 130px;
+    font-style: italic;
+}
