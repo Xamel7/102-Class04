@@ -50,7 +50,7 @@ height: 100%;
 position: absolute;
 top: 0;
 left: 0;
-background:#111142;
+background:#fff;
 z-index: -1;
 transition: 0.5s;
 }
@@ -61,7 +61,7 @@ transition: 0.5s;
     color: #111142;
 }
 #sideNav{
-    width: 250px;
+    width: 150px;
     height: 100vh;
     position: fixed;
     right: 0;
