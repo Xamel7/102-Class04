@@ -5,6 +5,7 @@
     <title>Image Slider</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <script src="demo.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -94,28 +95,6 @@
   </div>
 </section>
 
-
-
-
-  <script>
-    var menuBtn = document.getElementById("menuBtn")
-    var sideNav = document.getElementById("sideNav")
-    var menu = document.getElementById("menu")
-
-    sideNav.sytle.right = "-250";
-
-    menuBtn.onclick = function(){
-      if(sideNav.style.right == "-250px"){
-        sideNav.style.right = "0";
-        menu.src = "images/close.png";
-      }
-      else{
-        sideNav.style.right = "-250px";
-        menu.src = "images/menu.png";
-      }
-    }
-  </script>
-
   <article class="Reviews">
     <h2>Game Reviews</h2>
     <section class="main_review">
@@ -158,6 +137,25 @@
       }
     }, 5000);
     </script>
+  
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.sytle.right = "-250";
+
+    menuBtn.onclick = function(){
+      if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "images/close.png";
+      }
+      else{
+        sideNav.style.right = "-250px";
+        menu.src = "images/menu.png";
+      }
+    }
+  </script>
 
   </body>
 </html>
