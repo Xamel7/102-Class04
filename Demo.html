@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+
+    <!--image slider start-->
+    <div class="container">
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="banner1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="banner2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="banner3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="banner4.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+  </div>
+    <!--image slider end--><div>
+    <section id="banner">
+      <img src="images/logo.png" class="logo">
+      <div class="banner-text">
+          <h1>Game X Anime</h1>
+          <p>Welcome to Games X Anime; where we discuss various video games & anime!</p>
+          <div class="banner-btn">
+            <a href="#"><span></span>Games</a>
+            <a href="#"><span></span>Anime</a>
+          <div>
+            <a href="http://">Games</a>
+            <a href="http://">Anime</a>
+            <a href="http://">Manga</a>
+            <a href="http://">Forums</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div id="sideNav">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Anime</a></li>
+        <li><a href="#"></a>Games</li>
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">Social Media</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="menuBtn">
+    <img src="images/menu.png" id="menu">
+  </div>
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    menuBtn.onclick = function(){
+      if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+      }
+      else{
+        sideNav.style.right = "-250px";
+      }
+    }
+  </script>
+
+  <article class="Reviews">
+    <h2>Game Reviews</h2>
+    <section class="main_review">
+        <h3>Review</h3>
+        <img src="banner4.jpg" width="400"
+            height="400"><img>
+        <p>It was a pretty cool game.If you like story driven games.Every now and again I enjoy great told story
+            but this was lacking in a few areas.Like the story... man, it really drags the game down. The
+            characters are cookie-cutter anime tropes, the plot is extremely by-the-numbers but worst of all
+            it's soooo loooong. I just want to make it to the end of the game but it's just constant
+            cutscenes;where there saying their stupid catchphrases and of it has any impact on me in the
+            least.But on the other hand, thhe gameplay is visaully captivating and art styles are seriouly next
+            level. I'll give it a 5.5/10.</p>
+    </section>
+    <section class="user_reviews">
+        <h4>User reviews</h4>
+        <p></p>
+
+
+
+
+
+</article>
+<div>
+    <a href="http://">Back to the top</a>
+    <a href="http://">Home</a>
+</div>
+<div class="banner-btn">
+  <a href="#">Find Out</a>
+  <a href="#">Read More</a>
+</div>
+</div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+
+  </body>
+</html>
+      
