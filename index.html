@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Fighting Game</title>
+    <link rel="Demo.html">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1b1b1b;
+      }
+      .player {
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        transition: all 0.3s;
+      }
+      .player1 {
+        left: 50px;
+      }
+      .player2 {
+        right: 50px;
+      }
+      .player1.kick {
+        transform: translateX(50px) rotate(-30deg);
+      }
+      .player1.punch {
+        transform: translateX(30px) rotate(-10deg);
+      }
+      .player2.kick {
+        transform: translateX(-50px) rotate(30deg);
+      }
+      .player2.punch {
+        transform: translateX(-30px) rotate(10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="player player1"></div>
+    <div class="player player2"></div>
+    <script>
+      const player1 = document.querySelector('.player1');
+      const player2 = document.querySelector('.player2');
 
-<head>
-    <title>Image Slider</title>
-    <link rel="sytlesheet" href="style.css">
-    <link rel="sytlesheet" href="style2.css">
-</head>
-
-<body>
-
-</body>
-
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'a') {
+          player1.classList.add('kick');
+          setTimeout(() => {
+            player1.classList.remove('kick');
+          }, 300);
+        } else if (event.key === 's') {
+          player1.classList.add('punch');
+          setTimeout(() => {
+            player1.classList.remove('punch');
+          }, 300);
+        } else if (event.key === 'k') {
+          player2.classList.add('kick');
+          setTimeout(() => {
+            player2.classList.remove('kick');
+          }, 300);
+        } else if (event.key === 'l') {
+          player2.classList.add('punch');
+          setTimeout(() => {
+            player2.classList.remove('punch');
+          }, 300);
+        }
+      });
+    </script>
+  </body>
 </html>
-<html lang="en-US">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Games X Anime</title>
-</head>
-    <a class="logo" href="#">GXA</a>
-
-<body>
-    <div class="container">
-    <section id="banner">
-        <img src="images/logo.png" class="logo">
-        <div class="banner-text">
-            <div class="banner-btn">
-                <a href="#">Find Out</a>
-                <a href="#">Read More</a>
-            </div>
-            <h1>Game X Anime</h1>
-            <p>Welcome to Games X Anime; where we discuss various video games & anime!</p>
-        </div>
-    </section>
-    </div>
-
-
-    <div>
-        <a href="http://">Games</a>
-        <a href="http://">Anime</a>
-        <a href="http://">Manga</a>
-        <a href="http://">Forums</a>
-    </div>
-    <div>
-
-        <img src="banner2.jpg"width="400" height="400"><img>
-    </div>
-
-    <article class="Reviews">
-        <h2>Game Reviews</h2>
-        <section class="main_review">
-            <h3>Review</h3>
-            <img src="banner4.jpg" width="400"
-                height="400"><img>
-            <p>It was a pretty cool game.If you like story driven games.Every now and again I enjoy great told story
-                but this was lacking in a few areas.Like the story... man, it really drags the game down. The
-                characters are cookie-cutter anime tropes, the plot is extremely by-the-numbers but worst of all
-                it's soooo loooong. I just want to make it to the end of the game but it's just constant
-                cutscenes;where there saying their stupid catchphrases and of it has any impact on me in the
-                least.But on the other hand, thhe gameplay is visaully captivating and art styles are seriouly next
-                level. I'll give it a 5.5/10.</p>
-        </section>
-        <section class="user_reviews">
-            <h4>User reviews</h4>
-            <p></p>
-
-
-
-
-
-    </article>
-    <div>
-        <a href="http://">Back to the top</a>
-        <a href="http://">Home</a>
-    </div>
-
-    <body>
-        <html>

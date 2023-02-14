@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: 'Permanent Marker', cursive;
-
 }
-#banner{
-    background: linear-gradient((#111142))url(images/banner1.jpg);
+body{
+    background-image: url("demo.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;   
+    height: 500vh;   
 }
 .logo{
     width: 140px;
     position: absolute;
     top: 4%;
-    left: 10%;
+    left: 5%;
 }
 .banner-text{
     text-align: center;
