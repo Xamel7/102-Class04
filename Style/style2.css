@@ -4,11 +4,11 @@
     font-family: 'Permanent Marker', cursive;
 }
 body{
-    background-image: url("demo.png");
+    background-image: url("/images/demo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500vh;   
+    height: 600vh;   
 }
 .logo{
     width: 140px;
